@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="h1">Hello World!</h1>
+
+<button type="button" onclick="myFunction(0)" id="b1" >Dark</button>
+<script>
+function myFunction(d) {
+  if(document.getElementById('b1').innerHTML.toString()=="Dark"){
+  document.body.style.backgroundColor = "black";
+  document.getElementById('h1').style.color="white";
+  document.getElementById('b1').innerHTML="Light";
+}
+  else{
+    document.body.style.backgroundColor = "white";
+    document.getElementById('h1').style.color="black";
+    document.getElementById('b1').innerHTML="Dark";
+  }
+}
+</script>
+
+</body>
+</html>
